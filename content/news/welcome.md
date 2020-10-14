@@ -6,4 +6,4 @@ toc: false
 images:
 ---
 
-We're back! Sorry we let our public presense die down for quite a while again, but we're still around and hope to have some of our old content here again soon, and more new content to come moving forward!
+We're back! Sorry we let our public presence die down for quite a while again, but we're still around and hope to have some of our old content here again soon, and more new content to come moving forward!
