@@ -1,7 +1,7 @@
 ---
 title: "About Neg9"
 date: 2020-10-12T21:48:19-07:00
-draft: true
+draft: false
 ---
 
 ### Who is Neg9? / Being "Part of Neg9"
