@@ -9,7 +9,8 @@ pygmentsStyle: monokai
 paginate: 10
 # Maximum number of items in the RSS feed.
 rssLimit: 10
-# This message is only used by the RSS template.
+
+# Used in RSS template and partial/footer.html
 copyright: >-
   This work is licensed under a Creative Commons Attribution-NonCommercial 4.0
   International License.
@@ -70,6 +71,9 @@ params:
 
   homeSubtitle: Neg9
 
+  # Used in partial/footer.html
+  sourceurl: 'https://github.com/Neg9/neg9-www-static'
+
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl:
 
@@ -86,8 +90,8 @@ params:
   # Integrate Javascript files or stylesheets by adding the url to the external
   # assets or by linking local files with their path relative to the static
   # folder, e.g. "css/styles.css"
-  #customCSS: []
-  #customJS: []
+  # customCSS: []
+  # customJS: []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent: false
