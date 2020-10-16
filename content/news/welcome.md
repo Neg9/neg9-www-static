@@ -15,4 +15,4 @@ Instead of everything being a single stream of "News", posts are now split in to
 
 There may be some content formatting bugs in past posts that I haven't caught in the transition, feel free to open a bug against the [website's GitHub project][1] if you find any problems.
 
-[1]: "https://github.com/Neg9/neg9-www-static/issues/new"
+[1]: https://github.com/Neg9/neg9-www-static/issues/new
