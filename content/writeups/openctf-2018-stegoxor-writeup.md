@@ -15,27 +15,24 @@ This challenge came with a single jpg file (renamed stego.jpg) that was an unrem
 Error in "code" directive:
 maximum 1 argument(s) allowed, 5 supplied.
 
-{language=python}
-~~~~~~~~
-.. code:: $ steghide –extract -sf stego.jpg
 
-~~~~~~~~
+```bash
+$ steghide –extract -sf stego.jpg
+```
 
 using an empty passphrase when prompted. This produced a files.tar archive, which I then extracted 2 files from:
 
-{language=python}
-~~~~~~~~
+```
 HACKER.TXT: text file
 
 qr.xor. data file
-~~~~~~~~
+```
 
 At first I wasn’t sure what to do with HACKER.TXT, when I opened it with a text editor, some characters could not be displayed. Was this a clue, a diversion, or by design?
 
 The qr.xor file seemed like I should do something to it in order to get a QR code and the obvious choice was an xor operation. So I scripted up something to read in all the bytes of the file, xor them with the key and then write them all back out. Since I didn’t know what the key was, I looped thru 0x00 – 0xFF, however this did not produce any results. Next, I decided to xor the 2 files (qr.xor and HACKER.TXT) against each other, byte by byte (at least up to the last byte of the smallest file) and then write out the results to another file. The following is the python script that I used:
 
-{language=python}
-~~~~~~~~
+```python {linenos=table}
 with open('qr.xor', "rb") as f1:
     with open('HACKER.TXT', "rb") as f2:
         bytes1 = f1.read()
@@ -46,12 +43,11 @@ with open('qr.xor', "rb") as f1:
             xor.append(ord1 ^ ord2)
         fout = open('hackerqr', 'wb')
         fout.write(xor)
-~~~~~~~~
+```
 
 This produced a QR code in jpg format. I pulled up a QR reader on the web and read in my new file to decode. The decoding was a long string of base64. With this string I opened up a python terminal and ran the following in python:
 
-{language=python}
-~~~~~~~~
+```python {linenos=table}
 import base64
 
 s = '<insert base64>'
@@ -59,7 +55,7 @@ s_out = base64.b64decode(s)
 f = open('new', "wb")
 f.write(s_out)
 f.close()
-~~~~~~~~
+```
 
 This produced another QR code in a png file format. So again I went back to the QR online code reader and read in this new.png file, which again gave me a base64 string. With this string I followed the same method as above and produced a new file with the output.
 
