@@ -9,7 +9,7 @@ toc: false
 images:
 ---
 
-We're back! Sorry we let our public presence die down for quite a while again, but we're still around ~and hope to have some of our old content here again soon, and more new content to come moving forward!~ and have migrated the content from the previous website over here.
+We're back! Sorry we let our public presence die down for quite a while again, but we're still around ~~and hope to have some of our old content here again soon, and more new content to come moving forward!~~ and have migrated the content from the previous website over here.
 
 Instead of everything being a single stream of "News", posts are now split in to general `News` items like this one, and a dedicated category for `CTF Writeups`, since that's been the majority of our content as of late. CTF Writeups will also have shorter URLs, making it easier to share them. Each category is also accessible as it's own RSS feed if you just want to subscribe to CTF Writeup updates, for example.
 
