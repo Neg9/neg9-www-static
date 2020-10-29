@@ -10,7 +10,7 @@ Stay tuned for a new and improved version of the infamous _Neg9 Leaderboard_!
 
 ### List of Challenge Sites
 
-Until then, here is the set of sites that the Neg9 Leaderboard included. Some have unfortunately gone down since the leaderboard began, and that has been noted where appropriate.
+Until then, here is the set of sites that the Neg9 Leaderboard included. Some have unfortunately gone down since the leaderboard began, and that has been noted where appropriate. Please note that while we link to the down sites, the domains or sites may be taken over by untrusted third parties at this time - use caution and good judgement.
 
 | Challenge Site | Up/Down | Date Checked |
 | -------------- | ------- | ----------------- |
@@ -18,7 +18,7 @@ Until then, here is the set of sites that the Neg9 Leaderboard included. Some ha
 | [Embedded Security CTF](https://microcorruption.com/)                                                             | Up   | 2020-10-28 |
 | [Exploit Education (formerly: Exploit Exercises)](https://exploit.education/)                                     | Up   | 2020-10-28 |
 | [HackThisSite.org](https://www.hackthissite.org/)                                                                 | Up   | 2020-10-28 |
-| http://real-forensic.com/                                                                                         | Down | 2020-10-28 |
+| [real-forensic.com](http://real-forensic.com/)                                                                    | Down | 2020-10-28 |
 | [id0-rsa](https://id0-rsa.pub/)                                                                                   | Up   | 2020-10-28 |
 | [MysteryTwister C3 - The Crypto Challenge Contest](http://www.mysterytwisterc3.org)                               | Up   | 2020-10-28 |
 | [OverTheWire](http://www.overthewire.org/)                                                                        | Up   | 2020-10-28 |
