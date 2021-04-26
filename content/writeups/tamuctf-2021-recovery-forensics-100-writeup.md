@@ -12,7 +12,7 @@ images:
 TAMUctf 2021
 [Recovery](https://ctftime.org/task/15816)
 
-    I needed to copy a flag from my home computer to the mainframe at work, so I used a [floppy drive](https://shell.tamuctf.com/static/e85a7c0639b3db765319203a18fd531e/floppy.img.zip). It looks like a few bytes in the file got corrupted, so I deleted the file thinking it would be fine, but my friend says that's not enough to prevent hackers from recovering the data.
+>    I needed to copy a flag from my home computer to the mainframe at work, so I used a [floppy drive](https://shell.tamuctf.com/static/e85a7c0639b3db765319203a18fd531e/floppy.img.zip). It looks like a few bytes in the file got corrupted, so I deleted the file thinking it would be fine, but my friend says that's not enough to prevent hackers from recovering the data.
 
 First I tried to get it with fls and icat, no luck.
 
