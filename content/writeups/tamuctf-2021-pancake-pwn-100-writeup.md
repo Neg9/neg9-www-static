@@ -10,7 +10,7 @@ images:
 ---
 
 TAMUctf 2021
-[Encoding](https://ctftime.org/task/15793) - 100 points
+[Pancake](https://ctftime.org/task/15791) - 100 points
 
 >    Attack this binary to get the flag!
 >    [pancake](https://tamuctf.com/static-files/pancake)
