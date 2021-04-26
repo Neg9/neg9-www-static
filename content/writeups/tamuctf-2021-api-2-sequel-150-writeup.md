@@ -12,7 +12,7 @@ images:
 TAMUctf 2021
 [API 2 : The SeQueL](https://ctftime.org/task/15810) - 150 points
 
-    I just made my own SCP collection website. What do you think?
+>    I just made my own SCP collection website. What do you think?
 
 This is a simple SQL injection (SQLi) challenge that taught me some new tricks for SQL injection exploitation. I should have known these already, but that is how these sort of things work.
 
