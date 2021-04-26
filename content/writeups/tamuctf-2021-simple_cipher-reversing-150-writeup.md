@@ -147,7 +147,7 @@ So now we have the ability to break it in the same way.
 
 From my IRC channel:
 
-01:18 < Javantea> found an interesting bug in simple_cipher..
+> 01:18 < Javantea> found an interesting bug in simple_cipher..
 01:18 < Javantea> just by screwing around
 01:19 < Javantea> I think it's null related
 01:19 < Javantea> yeah.. cool
