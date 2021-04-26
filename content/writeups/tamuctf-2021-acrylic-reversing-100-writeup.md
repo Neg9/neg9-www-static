@@ -12,6 +12,8 @@ images:
 TAMUctf 2021
 [Acrylic](https://ctftime.org/task/15817)
 
+    This is an easy challenge. There is a flag that can be printed out from somewhere in this binary. Only one problem: There's a lot of fake flags as well. [acrylic](https://shell.tamuctf.com/static/ee1752a1e370c26acbe5f3079e51173a/acrylic)
+
 I wanted to use JavRE or another static method to solve this, but the solution that I found with JavRE was false. So this is a dynamic reverse engineering solution.
 
 So the strategy here was to see what happens with memory. Generally there will be a pointer to the string somewhere in memory. Sensible places to put that pointer is a register or the stack.
