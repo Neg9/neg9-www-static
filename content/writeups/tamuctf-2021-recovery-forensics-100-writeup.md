@@ -17,8 +17,7 @@ First I tried to get it with fls and icat, no luck.
 Get [Unproprietary Git](https://www.altsci.com/repo/).
 
 
-{language=bash}
-~~~~~~~~
+```sh
 python3 ~/altsci/unproprietary/unproprietary/find_compress1.py --magic -l 2069000 floppy.img
 found 1116160 gif
 
@@ -27,16 +26,15 @@ python3 ~/altsci/unproprietary/unproprietary/skipto.py floppy.img 1116160 >flag.
 gwenview flag.gif 
 
 gimp flag.gif 
-~~~~~~~~
+```
 
 
     12:58 < Javantea> okay I got the gif and it's corrupt
     12:58 < Javantea> but I bet I can get the data out of it
 
-{language=bash}
-~~~~~~~~
+```sh
 okteta flag.gif 
-~~~~~~~~
+```
 
 Using the file format I learned from [Wikipedia GIF](https://en.wikipedia.org/wiki/GIF#Example_GIF_file)
 
