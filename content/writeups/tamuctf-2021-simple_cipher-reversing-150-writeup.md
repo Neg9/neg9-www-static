@@ -148,14 +148,14 @@ So now we have the ability to break it in the same way.
 From my IRC channel:
 
 > 01:18 < Javantea> found an interesting bug in simple_cipher..
-01:18 < Javantea> just by screwing around
-01:19 < Javantea> I think it's null related
-01:19 < Javantea> yeah.. cool
-01:21 < Javantea> narrowed it down to a single character
-01:26 < Javantea> reproed it on a different character
-01:26 < Javantea> was pretty easy
-01:27 < Javantea> each ...
-01:27 < Javantea> will explain it in a blog post. doesn't make sense to explain it here
+> 01:18 < Javantea> just by screwing around
+> 01:19 < Javantea> I think it's null related
+> 01:19 < Javantea> yeah.. cool
+> 01:21 < Javantea> narrowed it down to a single character
+> 01:26 < Javantea> reproed it on a different character
+> 01:26 < Javantea> was pretty easy
+> 01:27 < Javantea> each ...
+> 01:27 < Javantea> will explain it in a blog post. doesn't make sense to explain it here
 
 So what we have here is a null. It's pretty clear right? Yes. Okay, so let's just assume that won't happen in the one we want..
 
