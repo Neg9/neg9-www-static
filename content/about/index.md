@@ -32,4 +32,14 @@ After participating with the group for some time, you may be invited to be a mem
 
 #### The Current Neg9 CTF Team Roster
 
-* To be filled out
+{{ range $.Site.Data.ctf.members.active }}
+  * {{ . }}
+{{ end }}
+
+#### Former Neg9 CTF Team Members
+
+We'd like to thank the following members who have been part of our CTF team in the past.
+
+{{ range $.Site.Data.ctf.members.inactive }}
+  * {{ . }}
+{{ end }}
