@@ -1,106 +1,127 @@
 active:
-    craSH:
-        first_name: Ian
-        last_name: Gallagher
-        email: crash@neg9.org
-
-    meta:
-        first_name: Marcus
-        last_name: Hodges
-        email: 0xmeta@gmail.com
-
-    serif:
-        first_name: Morgan
-        last_name: Davis
-        email: serif@hexoffenders.com
+    Javantea:
+        first_name: Javantea
+        last_name: null
+        email: jvoss@altsci.com
+        display_order: 1
 
     tecknicaltom:
         first_name: Tom
         last_name: Samstag
         email: tecknicaltom@neg9.org
+        display_order: 2
 
-    kaizoku:
-        first_name: Josh
-        last_name: McLaughlin
-        email: kaizoku@phear.cc
+    craSH:
+        first_name: Ian
+        last_name: Gallagher
+        email: crash@neg9.org
+        display_order: 3
+
+    meta:
+        first_name: Marcus
+        last_name: Hodges
+        email: 0xmeta@gmail.com
+        display_order: 4
 
     reidb:
         first_name: Reid
         last_name: Borsuk
         email: reid.borsuk@gmail.com
-
-    _rev:
-        first_name: Andrew
-        last_name: Mckenna
-        email: andrewcmckenna@gmail.com
+        display_order: 5
 
     hbw:
         first_name: Henry
         last_name: Baba-Weiss
         email: henry.babaweiss@gmail.com
-
-    FalconK:
-        first_name: Falcon
-        last_name: Momot
-        email: falcon@iridiumlinux.org
+        display_order: 6
 
     coldwaterq:
         first_name: Johnathan
         last_name: Irwin
         email: coldwaterq@gmail.com
+        display_order: 7
 
-    Javantea:
-        first_name: Javantea
-        last_name: null
-        email: jvoss@altsci.com
+    kaizoku:
+        first_name: Josh
+        last_name: McLaughlin
+        email: kaizoku@phear.cc
+        display_order: 8
+
+    FalconK:
+        first_name: Falcon
+        last_name: Momot
+        email: falcon@iridiumlinux.org
+        display_order: 9
+
+    serif:
+        first_name: Morgan
+        last_name: Davis
+        email: serif@hexoffenders.com
+        display_order: 10
+
+    _rev:
+        first_name: Andrew
+        last_name: Mckenna
+        email: andrewcmckenna@gmail.com
+        display_order: 11
 
 inactive:
-    spikey:
-        first_name: Joe
-        last_name: Basirico
-        email: joebasirico@gmail.com
-
-    fR:
-        first_name: Eric
-        last_name: Butler
-        email: eric@codebutler.com
-
-    greenfly:
-        first_name: Kyle
-        last_name: Rankin
-        email: kyle@greenfly.net
-
-    static.cast:
-        first_name: Ian
-        last_name: Nickles
-        email: static.cast@gmail.com
-
-    twinvega:
-        first_name: Thad
-        last_name: Bogner
-        email: twinvega@gmail.com
-
-    Syn:
-        first_name: Max
-        last_name: Vohra
-        email: max@seattlenetworks.com
-
-    LeJIT:
-        first_name: Zak
-        last_name: Dehlawi
-        email: zdehlawi@gmail.com
-
     dyn:
         first_name: Aaron
         last_name: Grattafiori
         email: aaron@digitalinfinity.net
+        display_order: 1
 
     hex:
         first_name: Josh
         last_name: Dukes
         email: hex@neg9.org
+        display_order: 2
+
+    static.cast:
+        first_name: Ian
+        last_name: Nickles
+        email: static.cast@gmail.com
+        display_order: 3
+
+    twinvega:
+        first_name: Thad
+        last_name: Bogner
+        email: twinvega@gmail.com
+        display_order: 4
+
+    Syn:
+        first_name: Max
+        last_name: Vohra
+        email: max@seattlenetworks.com
+        display_order: 5
 
     supersat:
         first_name: Karl
         last_name: Koscher
         email: supersat@u.washington.edu
+        display_order: 6
+
+    LeJIT:
+        first_name: Zak
+        last_name: Dehlawi
+        email: zdehlawi@gmail.com
+        display_order: 7
+
+    spikey:
+        first_name: Joe
+        last_name: Basirico
+        email: joebasirico@gmail.com
+        display_order: 8
+
+    fR:
+        first_name: Eric
+        last_name: Butler
+        email: eric@codebutler.com
+        display_order: 9
+
+    greenfly:
+        first_name: Kyle
+        last_name: Rankin
+        email: kyle@greenfly.net
+        display_order: 10

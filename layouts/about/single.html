@@ -11,7 +11,9 @@
             </p>
         </div>
 
-        <article align="center">
+        <article>
+            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+
             {{ if .Params.toc }}
                 <hr />
                 <aside id="toc">
@@ -28,12 +30,12 @@
             <div class="post-content">
                 {{ .Content }}
 
-                <h4 id="the-current-neg9-ctf-team-roster">The Current Neg9 CTF Team Roster</h4>
+                <h4 id="the-current-neg9-ctf-team-roster">Current Neg9CTF Team Members</h4>
                 <ul>
                 {{ range $elem_key, $elem_val := $.Site.Data.ctf.members.active }}
                     <li>{{ $elem_key }}</li>
                 {{ else }}
-                    <li><em>No active CTF members - perhaps you would like to join!</li>
+                    <li><em>No active CTF members - perhaps you would like to join!</em></li>
                 {{ end }}
                 </ul>
 
@@ -42,11 +44,18 @@
                 {{ range $elem_key, $elem_val := $.Site.Data.ctf.members.inactive }}
                     <li>{{ $elem_key }}</li>
                 {{ else }}
-                    <li><em>No past CTF members - consider this a site error/li>
+                    <li><em>No past CTF members - consider this a site error</li>
                 {{ end }}
                 </ul>
+                <p>
+                    <em>Order of the above rosters is arbitrary, and no meaning should be given to where a given member is in the list</em>
+                </p>
             </div>
         </article>
+
+        {{- if .Params.tags }}
+        <hr />
+        {{- end }}
 
         <div class="post-info">
             {{ partial "tags.html" . }}
