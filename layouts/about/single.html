@@ -1,0 +1,69 @@
+{{ define "main" }}
+    <main class="post">
+
+        <div class="post-info">
+            {{ if .IsTranslated }}
+                {{ i18n "postAvailable" }}
+                {{ range .Translations }}
+                    <a href="{{ .Permalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+                {{ end}}
+            {{ end }}
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+
+            {{ if .Params.toc }}
+                <hr />
+                <aside id="toc">
+                <div class="toc-title">{{ i18n "tableOfContents" }}</div>
+                    {{ .TableOfContents }}
+                </aside>
+                <hr />
+            {{ end }}
+
+            {{ with .Params.Cover }}
+                <img src="{{ . | relURL }}" class="post-cover" />
+            {{ end }}
+
+            <div class="post-content">
+                {{ .Content }}
+
+                <h4 id="the-current-neg9-ctf-team-roster">Current Neg9CTF Team Members</h4>
+                <ul>
+                {{ range $elem_key, $elem_val := $.Site.Data.ctf.members.active }}
+                    <li>{{ $elem_key }}</li>
+                {{ else }}
+                    <li><em>No active CTF members - perhaps you would like to join!</em></li>
+                {{ end }}
+                </ul>
+
+                <h4 id="former-neg9-ctf-team-members">Former Neg9 CTF Team Members</h4>
+                <ul>
+                {{ range $elem_key, $elem_val := $.Site.Data.ctf.members.inactive }}
+                    <li>{{ $elem_key }}</li>
+                {{ else }}
+                    <li><em>No past CTF members - consider this a site error</li>
+                {{ end }}
+                </ul>
+                <p>
+                    <em>Order of the above rosters is arbitrary, and no meaning should be given to where a given member is in the list</em>
+                </p>
+            </div>
+        </article>
+
+        {{- if .Params.tags }}
+        <hr />
+        {{- end }}
+
+        <div class="post-info">
+            {{ partial "tags.html" . }}
+            {{ partial "categories.html" . }}
+
+            {{- if .GitInfo }}
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}</p>
+			{{- end }}
+  		</div>
+    </main>
+{{ end }}
