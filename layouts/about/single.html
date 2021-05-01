@@ -30,15 +30,19 @@
 
                 <h4 id="the-current-neg9-ctf-team-roster">The Current Neg9 CTF Team Roster</h4>
                 <ul>
-                {{ range $.Site.Data.ctf.members.active }}
-                  <li> {{ . }}
+                {{ range $elem_key, $elem_val := $.Site.Data.ctf.members.active }}
+                    <li>{{ $elem_key }}</li>
+                {{ else }}
+                    <li><em>No active CTF members - perhaps you would like to join!</li>
                 {{ end }}
                 </ul>
 
                 <h4 id="former-neg9-ctf-team-members">Former Neg9 CTF Team Members</h4>
                 <ul>
-                {{ range $.Site.Data.ctf.members.inactive }}
-                  <li> {{ . }}
+                {{ range $elem_key, $elem_val := $.Site.Data.ctf.members.inactive }}
+                    <li>{{ $elem_key }}</li>
+                {{ else }}
+                    <li><em>No past CTF members - consider this a site error/li>
                 {{ end }}
                 </ul>
             </div>
