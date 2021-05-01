@@ -29,17 +29,3 @@ So, you want to be a member to the Neg9 CTF Team? First you must participate. Jo
 Many times throughout the year, the Neg9 CTF Team participates in CTF games. For many of these CTF games, we'll reach out to members of the general group of members and friends. If you express an interest and have shown your dedication to CTF games, we will likely invite you to participate. Take advantage of these opportunities to show your dedication. Show up for the entire event and collaborate with other members of the Team. If you leave early or are annoying, arrogant, or do not play nicely, don't expect to be invited back.
 
 After participating with the group for some time, you may be invited to be a member of the CTF Team. Being part of the CTF Team means representing Neg9's public image and (believe it or not) demands a certain level of professionalism and good nature. Being a member of the Team comes with many expectations. At this point you will be expected to continue your dedication, help pay for infrastructure costs, develop tools, write up challenges, or help to maintain Neg9 assets. If you don't have time for continual active participation, this group is not for you. No worries, not everyone can prioritize CTF or has the free time to dedicate - be honest with yourself before you accept an invitation.
-
-#### The Current Neg9 CTF Team Roster
-
-{{ range $.Site.Data.ctf.members.active }}
-  * {{ . }}
-{{ end }}
-
-#### Former Neg9 CTF Team Members
-
-We'd like to thank the following members who have been part of our CTF team in the past.
-
-{{ range $.Site.Data.ctf.members.inactive }}
-  * {{ . }}
-{{ end }}
