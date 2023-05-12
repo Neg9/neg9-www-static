@@ -1,1 +1,1 @@
-/.well-known/host-meta https://mastodon.neg9.org/.well-known/host-meta 301
+/.well-known/* https://mastodon.neg9.org/.well-known/:splat 301
