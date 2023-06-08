@@ -9,7 +9,6 @@ toc: false
 images:
 ---
 
-{language=python}
 ~~~~~~~~
 Forbidden Folly 1 50 ---
 Welcome to Hacker2, where uptime is a main prority: http://172.31.2.90
@@ -24,25 +23,15 @@ Attempting to visit the page linked to in the hint only resulted in a 403 Forbid
 
 Eventually though, we figured out that requesting the resource with an `X-Forwarded-For` HTTP header was the key:
 
-"System Message: ERROR/3 (<string>:, line 15)"
-Error in "code" directive:
-maximum 1 argument(s) allowed, 6 supplied.
-
-{language=python}
 ~~~~~~~~
-.. code:: curl -v http://172.31.2.90/' -H 'X-Forwarded-For: 127.0.0.1'
+curl -v http://172.31.2.90/' -H 'X-Forwarded-For: 127.0.0.1'
 
 ~~~~~~~~
 
 This returned an HTML page for the "HackerTwo System Status" page, and at the bottom of the source is the flag:
 
-"System Message: ERROR/3 (<string>:, line 19)"
-Error in "code" directive:
-maximum 1 argument(s) allowed, 3 supplied.
-
-{language=python}
 ~~~~~~~~
-.. code:: <!-- flag(Th4t_WAS_To0_EASY} -->
+<!-- flag(Th4t_WAS_To0_EASY} -->
 
 ~~~~~~~~
 
@@ -54,7 +43,6 @@ The "HackerTwo System Status" page contained the following text:
 
 We thought this web terminal might be the key to finding the flag, so keeping the `X-Forwarded-For` header as before, we poked around a bit. Eventually after manually trying a few paths, we found `/debug` on the server returned a directory listing containing `secret.txt`, which contained the flag:
 
-{language=python}
 ~~~~~~~~
 curl -v 'http://172.31.2.91/debug/secret.txt' -H 'X-Forwarded-For: 127.0.0.1'
 *   Trying 172.31.2.91...
