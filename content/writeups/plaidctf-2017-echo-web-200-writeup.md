@@ -16,7 +16,6 @@ The source code for the web front-end was provided. Examining it, you see that t
 ```python {title="echo_57f0dd57961caae2fd8b3c080f0e125b.py",linenos=table,linenostart=85}
      with open(my_path + "input" ,"w") as f:
          f.write('\n'.join(tweets))
-
 ```
 
 Also, a flag is expanded and written to a file. This creates a large file (65000b per character of the flag) that needs to be acquired completely to get the flag.
@@ -35,7 +34,6 @@ def process_flag (outfile):
 
             f.write(towrite + chr(c ^ ord(x)))
     return
-
 ```
 
 Both of these files are passed to a docker container:
