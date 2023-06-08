@@ -105,7 +105,7 @@ def just_saying (fname):
                 "espeak " + " -w " + OUTPUT_PATH + str(i) + ".wav \"" + l + "\""])
 ```
 
-A quick glance at that shows that it's vulnerable to shell injection in the call to espeak. Submitting a tweet with of `\`pwd\`` (using backticks) returns an audio of "slash", confirming.
+A quick glance at that shows that it's vulnerable to shell injection in the call to espeak. Submitting a tweet with of `` `pwd` `` (using backticks) returns an audio of "slash", confirming.
 
 Since the audio is converted by ffmpeg, we can't just cat the flag file into the output wav files. Instead, I chose to reconstruct the flag within the docker image. After confirming that the docker environment had Perl available, I was off to do some golfing, eventually working up to:
 
